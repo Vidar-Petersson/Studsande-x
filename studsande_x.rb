@@ -71,11 +71,12 @@ while true
     system("cls")
     grid = Array.new(7) { "==============" }
 
-    #Kollar kollision med metoden checkcollission
+    #Kollar kollision med metoden check_collission
     for i in 0..balls.length-1
         balls[i].check_collision(balls, grid)
     end
 
+    #Uppdaterar objektens positioner med metoden update
     for i in 0..balls.length-1
         balls[i].update
     end
